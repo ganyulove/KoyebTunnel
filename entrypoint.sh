@@ -24,7 +24,7 @@ echo "=================================================================="
 echo "🚀 YouTube 科技共享 恭喜您 专属容器部署成功！您的 VLESS 万能快捷导入节点如下："
 echo "------------------------------------------------------------------"
 if [ -n "$UUID" ] && [ -n "$SUBDOMAIN" ]; then
-    echo "vless://${UUID}@${SUBDOMAIN}:443?encryption=none&security=tls&sni=${SUBDOMAIN}&type=ws&host=${SUBDOMAIN}&path=%2Fblog&ed=2048#Koyeb-Argo-自用输出"
+    echo "vless://${UUID}@${SUBDOMAIN}:443?encryption=none&security=tls&sni=${SUBDOMAIN}&type=ws&host=${SUBDOMAIN}&path=%2Fblog#Koyeb-Argo"
 else
     echo "[提示] 如果需要自动输出成品链接，请在 Koyeb 环境变量里补全 SUBDOMAIN 参数"
 fi
